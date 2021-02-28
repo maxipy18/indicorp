@@ -150,11 +150,12 @@ header {
 }
 
 .header__link {
+    flex-basis: 328px;
     text-decoration: none;
 }
 
 .header__card {
-    width: 328px;
+    width: 100%;
     background-color: #fff;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -460,6 +461,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    row-gap: 20px;
     padding: 58px 0;
     margin-bottom: 20px;
 }
@@ -781,4 +783,119 @@ input {
 
 .social-link +.social-link {
     margin-left: 20px;
+}
+
+
+/*========= media ========== */
+
+
+@media(max-width: 1200px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .header__logo {
+        margin-left: 75px;
+    }
+
+    .service__content {
+        margin-left: 30px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .header__logo {
+        margin-left: 5px;
+    }    
+
+    .list__cards,
+    .choose__cards, 
+    .advice__cards,
+    .service__block {
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    
+    
+}
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+    .consult {
+        justify-content: center;
+    }
+    .consult__content {
+        text-align: center;
+    }
+
+    .subscribe {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .subscribe__form,
+    .subscribe__label {
+        flex-basis: 450px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 544px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .header__inner {
+        text-align: center;
+    }
+
+    .header__inner-title {
+        margin-bottom: 40px;
+        line-height: 40px;
+    }
+
+    .header__inner-text {
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .header__btn {
+        justify-content: center;
+        align-items: center;
+    }
+    .header__inner-now,
+    .header__inner-more {
+        margin-bottom: 45px;
+    }
+
+    .choose {
+        padding: 50px 0;
+    }
+
+    .advice {
+        padding: 50px 0;
+    }
+
+    .service {
+        padding: 50px 0;
+    }
+
+    .contact {
+        padding: 50px 0;
+    }
+
+    .contact__text {
+        margin-bottom: 20px;
+    }
+
+    .contact__cards {
+        margin-bottom: 30px;
+    }
+
+    .nav__item {
+        padding-left: 50px;
+    }
 }
