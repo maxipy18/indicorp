@@ -60,6 +60,7 @@ header {
 }
 .nav__link:hover {
     color: #252B42;
+    
 }
 
 
@@ -70,6 +71,7 @@ header {
     background-repeat: no-repeat
     ;
     background-position: center;
+    cursor: pointer;
 }
 
 .main__title {
@@ -790,6 +792,60 @@ input {
 .social-link +.social-link {
     margin-left: 20px;
 }
+
+
+/* ======== popup ======== */
+
+
+.modal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    transition: 0.3s;
+}
+
+.modal-active {
+    left: 0;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    opacity: 0.9;   
+}
+
+.popup { 
+    width: 50%;
+    height: 80%;
+    margin: auto;      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    
+}
+
+.popup .nav__link {
+    margin-bottom: 5px;
+}
+
+.btn-close {    
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg,transparent 45%, #737373 46%, #737373 55%, transparent 56%, transparent 100%), linear-gradient(-45deg,transparent 45%, #737373 46%, #737373 55%, transparent 56%, transparent 100%);
+    margin-bottom: 15px;
+    transform: translateX(200%);
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    background: linear-gradient(45deg,transparent 45%, #000 46%, #000 55%, transparent 56%, transparent 100%), linear-gradient(-45deg,transparent 45%, #000 46%, #000 55%, transparent 56%, transparent 100%);
+}
+
 
 
 /*========= media ========== */
